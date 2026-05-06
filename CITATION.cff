@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use PhyloRt, please cite the associated paper."
+title: "PhyloRt"
+authors:
+  - family-names: "Xie"
+    given-names: "Ruopeng"
+version: "0.1.0"
+date-released: "2026-04-30"
+

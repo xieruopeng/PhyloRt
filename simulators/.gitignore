@@ -1,0 +1,7 @@
+runs/
+*.nwk
+*.nexus
+*.result
+*.csv
+*.tsv
+!README.md

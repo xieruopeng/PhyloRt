@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PhyloRt"
+version = "0.1.0"
+description = "PhyloRt: estimating time-varying reproduction numbers from phylogenetic trees."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Ruopeng Xie"}
+]
+keywords = ["phylogenetics", "phylodynamics", "Rt", "epidemiology"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+  "ete3>=3.1.2",
+  "joblib>=1.2.0",
+  "matplotlib>=3.7.0",
+  "numpy>=1.23.0",
+  "pandas>=1.5.0",
+  "psutil>=5.9.0",
+  "tensorflow>=2.12.0",
+  "tqdm>=4.65.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.4.0"]
+
+[project.scripts]
+PhyloRt = "PhyloRt.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["PhyloRt*"]
+
+[tool.setuptools.package-data]
+PhyloRt = ["pretrained_models/*.h5", "clock_rates/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
