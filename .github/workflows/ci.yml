@@ -14,6 +14,9 @@ jobs:
         os: [ubuntu-latest, windows-latest]
         python-version: ["3.10", "3.11", "3.12"]
 
+    env:
+      MPLBACKEND: Agg
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
