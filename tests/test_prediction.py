@@ -362,7 +362,8 @@ def test_predict_multiple_replicates_keep_tree_files_uses_relative_subtree_paths
 
     assert (tmp_path / "out" / "replicates" / "replicate_0001" / "trees").exists()
     assert result["subtree_id"].tolist() == ["1_50", "1_50"]
-    assert result["subtree_nwk_file"].tolist() == [
+    normalized_paths = [path.replace("\\", "/") for path in result["subtree_nwk_file"].tolist()]
+    assert normalized_paths == [
         "replicates/replicate_0001/trees/tree_0001/iterate/subtree_replicate_0001_tree_0001_1_50.nwk",
         "replicates/replicate_0002/trees/tree_0001/iterate/subtree_replicate_0002_tree_0001_1_50.nwk",
     ]
