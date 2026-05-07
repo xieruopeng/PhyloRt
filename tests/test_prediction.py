@@ -190,7 +190,8 @@ def test_keep_tree_files_preserves_tree_folder(monkeypatch, tmp_path):
 
     assert (tmp_path / "trees" / "tree_0001" / "iterate").exists()
     assert result["subtree_id"].tolist() == ["1_50"]
-    assert result["subtree_nwk_file"].tolist() == ["trees/tree_0001/iterate/dummy.nwk"]
+    normalized_paths = [path.replace("\\", "/") for path in result["subtree_nwk_file"].tolist()]
+    assert normalized_paths == ["trees/tree_0001/iterate/dummy.nwk"]
 
 
 def test_predict_multiple_replicates_uses_derived_seeds_and_numbered_trees(monkeypatch, tmp_path):
