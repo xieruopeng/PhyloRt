@@ -94,9 +94,9 @@ PhyloRt/
 
 ## Citation
 
-If you use PhyloRt in research, please cite this software using
-[`CITATION.cff`](CITATION.cff).  
-The manuscript citation link (preprint/DOI) will be added once publicly available.
+If you use PhyloRt in research, please cite the manuscript and (optionally) this software record in [`CITATION.cff`](CITATION.cff).
+
+**Preprint:** [medRxiv](https://www.medrxiv.org/content/10.64898/2026.05.07.26352673v1) — *Scalable deep-learning-based inference of time-varying transmission dynamics from outbreak phylogenies* — DOI [10.64898/2026.05.07.26352673](https://doi.org/10.64898/2026.05.07.26352673).
 
 ## License
 
