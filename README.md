@@ -94,7 +94,7 @@ PhyloRt/
 
 ## Citation
 
-If you use PhyloRt in research, please cite: *Scalable deep-learning-based inference of time-varying transmission dynamics from outbreak phylogenies* — [https://doi.org/10.64898/2026.05.07.26352673](https://doi.org/10.64898/2026.05.07.26352673).
+If you use PhyloRt, please cite: *Scalable deep-learning-based inference of time-varying transmission dynamics from outbreak phylogenies* — [https://doi.org/10.64898/2026.05.07.26352673](https://doi.org/10.64898/2026.05.07.26352673).
 
 ## License
 
